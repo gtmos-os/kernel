@@ -1,20 +1,16 @@
-# Cave-Like Operating System
-cavOS is an x86_64 POSIX-compliant operating system in C. An active effort of making a full OS, with a simple and readable codebase.
+# GT-MOS Operating System
+GT-MOS is an x86_64 POSIX-compliant operating system in C. This is a fork of [cavOS](https://github.com/malwarepad/cavOS) by MalwarePad with a customised userspace.
 
-[![GitHub top language](https://img.shields.io/github/languages/top/malwarepad/cavOS?logo=c&label=)](https://github.com/malwarepad/cavOS/blob/master/src/kernel/Makefile)
-[![GitHub license](https://img.shields.io/github/license/malwarepad/cavOS)](https://github.com/malwarepad/cavOS/blob/master/LICENSE)
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/e78ad48f394f46d1bb98f1942c7e1f21)]()
-[![GitHub contributors](https://img.shields.io/github/contributors/malwarepad/cavOS)](https://github.com/malwarepad/cavOS/graphs/contributors)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/malwarepad/cavOS)](https://github.com/malwarepad/cavOS/commits)
+[![GitHub top language](https://img.shields.io/github/languages/top/gtmos-os/kernel?logo=c&label=)](https://github.com/gtmos-os/kernel/blob/master/src/kernel/Makefile)
+[![GitHub license](https://img.shields.io/github/license/gtmos-os/kernel)](https://github.com/gtmos-os/kernel/blob/master/LICENSE)
+[![GitHub contributors](https://img.shields.io/github/contributors/gtmos-os/kernel)](https://github.com/gtmos-os/kernel/graphs/contributors)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/m/gtmos-os/kernel)](https://github.com/gtmos-os/kernel/commits)
+
+<details><summary>Original cavOS readme</summary>
 
 ## Preview of the OS
 ![Preview of the OS](https://raw.malwarepad.com/cavos/images/preview4.png)
 ![Preview of the OS](https://raw.malwarepad.com/cavos/images/preview5.png)
-
-## Why make your own OS in [insert year]?
-> **because I can.**
-
-Having a good time is my drive for this project + I learn a lot of cool low level stuff alongside that! 
 
 ## Kernel status
 The cavOS kernel is a monolithic x86_64 one written in relatively simple C with a few bits of Intel assembly here and there. It uses the Limine bootloader and leverages the FAT32 filesystem for booting along with Ext2 for the root partition. I try to keep the code structure clean and fairly easy to understand, while avoiding too much abstraction. Hence, code quality and clarity are sometimes prioritized over performance gains.
@@ -40,11 +36,14 @@ As far as the actual implementation goes, I'm using the `apk` package manager fr
 ## Is this a Linux distribution?
 No! The cavOS kernel does not share source code or headers with Linux. Some header definitions are obviously present but that is just to support the userspace. Internally the cavOS kernel doesn't have much in common with Linux other than the fact that it's monolithic. This layout may change in the future with cavOS-specific extensions being added as well.
 
+</details>
+
 ## Documentation
 - **Contributing:** Information about contribution guidelines & suggestions [docs/contributing.md](docs/contributing.md)
 - **Compiling:** Information about building the OS correctly & cleaning unused binaries [install.md](docs/install.md)
 
 ## Credits
+- [cavOS](https://github.com/malwarepad/cavOS): Amd64 operating system in C. Trying to make a full OS, with a simple and readable codebase!
 - [Limine](https://github.com/limine-bootloader/limine): Modern, advanced, portable, multiprotocol bootloader and boot manager
 - [uACPI](https://github.com/uACPI/uACPI): A portable and easy-to-integrate implementation of the ACPI
 - [Alpine Package Keeper](https://wiki.alpinelinux.org/wiki/Alpine_Package_Keeper): Alpine Linux's package management solution and official repositories

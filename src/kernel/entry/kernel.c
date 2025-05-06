@@ -92,8 +92,8 @@ void _start(void) {
     printf("[warning] System disk has not been detected!\n");
 
   printf("=========================================\n");
-  printf("==     Cave-Like Operating System      ==\n");
-  printf("==      Copyright MalwarePad 2024      ==\n");
+  printf("==       GT-MOS Operating System       ==\n");
+  printf("==     Copyright Samuel Hulme 2025     ==\n");
   printf("=========================================\n\n");
 
   run("/bin/bash", true, 0, 0);
